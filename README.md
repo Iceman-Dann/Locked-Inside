@@ -35,35 +35,7 @@ Players are trapped in a haunted mansion, exploring rooms, solving puzzles, coll
 - **Web Port:** A basic web version using HTML5 Canvas and JavaScript for broader accessibility.
 
 ---
-
-## Folder Structure
-
-Locked Inside/
-│
-├─ res/ # Game assets
-│ ├─ NPC/ # NPC sprites (e.g., NPC1.png, NPC2.png)
-│ ├─ inventory/ # Item images (e.g., gun.png, knife.png, key.png)
-│ ├─ monsters/ # Monster sprites (e.g., Tall Monster.png)
-│ ├─ music/ # Audio files (.wav format, e.g., TestAudio.wav)
-│ ├─ player/ # Player sprites (animations for movement)
-│ ├─ texture/ # UI and environment textures (e.g., menus, backgrounds)
-│ └─ *.png # Room backgrounds (e.g., livingroom.png, room2.png)
-│
-├─ src/ # Source code
-│ ├─ Boilerplate/ # Core application classes (MainApplication, GButton, GParagraph, etc.)
-│ ├─ Entity/ # Player, NPCs, and monster classes (Player, Monster, Entity, NPC)
-│ ├─ GamePanes/ # Different screens and menus (MenuPane, BedRoomGamePane, OfficeGamePane, etc.)
-│ └─ Item/ # Items, inventory, and door system (Item, Inventory, Door, enums like ItemType, MapType)
-│
-├─ bin/ # Compiled Java classes (generated during compilation)
-├─ web/ # Web version files
-│ ├─ index.html # HTML page for the web game
-│ └─ main.js # JavaScript implementation of the game
-├─ acm.jar # ACM Java library (required for compilation and running)
-├─ TODO.md # Development tasks and notes
-└─ README.md # This document
-
----
+\\
 
 ## Requirements
 - **Java JDK 17 or higher** (for compiling and running the Java version)
