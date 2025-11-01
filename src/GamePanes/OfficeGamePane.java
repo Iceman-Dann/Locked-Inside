@@ -13,23 +13,28 @@ import acm.graphics.GRectangle;
 import acm.graphics.GLabel;
 
 public class OfficeGamePane extends GraphicsPane implements ActionListener {
-
 	private MainApplication program;
-	private GRect background = new GRect(0, 0, 800, 640);
+	private GRect backgroundBlack;
+	private GImage officeMap;
 	private int playerX = 50, playerY = 100;
 	private ArrayList <GRect> walls = new ArrayList <GRect>();
 
 	public OfficeGamePane(MainApplication app) {
 		this.program = app;
-		background.setFilled(true);
-		background.setFillColor(java.awt.Color.BLACK);
+		backgroundBlack = new GRect(0, 0, 1500, 1500);
+		backgroundBlack.setFilled(true);
+		backgroundBlack.setFillColor(java.awt.Color.BLACK);
+		backgroundBlack.setLineWidth(0); // Make border fully invisible
+		officeMap = new GImage("res/room2.png");
+		officeMap.setSize(777, (int)(800 / 3.5)); // Width 777px (3 left, 20 right), height 1/3.5 of width
 		setWalls();
 	}
 
 	@Override
 	public void showContents() {
 		//1. background image
-		program.add(background);
+		program.add(backgroundBlack);
+		program.add(officeMap, 33, 68); // Moved down 20px and right 10px from previous (23+10=33, 48+20=68)
 		//2. walls
 		for (int i=0; i<walls.size(); i++) {program.add(walls.get(i));}
 		//3. items on the map
@@ -56,7 +61,8 @@ public class OfficeGamePane extends GraphicsPane implements ActionListener {
 		//1. walls
 		for(int i=0; i<walls.size(); i++) {program.remove(walls.get(i));}
 		//2. background image
-		program.remove(background);
+		program.remove(backgroundBlack);
+		program.remove(officeMap);
 		//3. doors
 		//4. player and monster
 		program.remove(program.player.getImage());
