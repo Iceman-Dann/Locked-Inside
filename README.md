@@ -185,7 +185,7 @@ java -cp "bin:acm.jar" Boilerplate.MainApplication
 ---
 
 ## Credits
-- **Developer:** Iceman-Dann (and team contributors).
+- **Developer:** Iceman-Dann
 - **Assets:** Custom sprites and audio created for the project.
 - **Libraries:** ACM Java Graphics Library (Stanford University).
 - **Inspiration:** Classic horror games like Resident Evil and point-and-click adventures.
@@ -198,3 +198,5 @@ This project is developed for educational and non-commercial purposes. Redistrib
 ---
 
 For issues, contributions, or questions, please open an issue on the GitHub repository: [https://github.com/Iceman-Dann/Locked-Inside](https://github.com/Iceman-Dann/Locked-Inside).
+
+BUILT FOR HORROR HACKS (https://horror-hacks-2025.devpost.com/)
