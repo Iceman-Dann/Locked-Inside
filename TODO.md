@@ -1,5 +1,1 @@
-- Update OfficeGamePane.java walls for 10px left/right, 30px top/bottom padding
-- Set player start position to middle left (x=50, y=320)
-- Ensure gun is pickable on floor in office, not in inventory initially
-- Test: run game, navigate to office, pick gun, shoot monster
-- Delete old Room2GamePane.java file
+
